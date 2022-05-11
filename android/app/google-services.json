@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "717874347780",
+    "project_id": "toy-project-100",
+    "storage_bucket": "toy-project-100.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717874347780:android:3f5d83a026045d3a1c9a51",
+        "android_client_info": {
+          "package_name": "com.awesomproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717874347780-4mn1r9u9iautrgble3lvboegnmboc95m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVAP7gnkfQUvfukgaWphvttwj8Pq3Yyu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717874347780-4mn1r9u9iautrgble3lvboegnmboc95m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717874347780:android:77cdfd57b5a10a411c9a51",
+        "android_client_info": {
+          "package_name": "com.toy_project_fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717874347780-4mn1r9u9iautrgble3lvboegnmboc95m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVAP7gnkfQUvfukgaWphvttwj8Pq3Yyu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717874347780-4mn1r9u9iautrgble3lvboegnmboc95m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
