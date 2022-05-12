@@ -40,7 +40,6 @@ const Tab = createBottomTabNavigator();
 const Tabs = () => {
     return (
       <Tab.Navigator
-        initialRouteName='Home'
         screenOptions={{
           headerShown: false,
           tabBarShowLabel: false,
@@ -73,7 +72,7 @@ const Tabs = () => {
                     height: 30,
                     tintColor: focused ? '#C449C2' : 'grey',
                   }}
-                //  source={require('../assets/icons/homepage.png')} 
+                source={require('../assets/icons/homepage.png')} 
                 />
               </View>
             ),
@@ -95,7 +94,7 @@ const Tabs = () => {
                     height: 30,
                     tintColor: focused ? '#C449C2' : 'grey',
                   }}
-                  // source={require('../assets/icons/bell.png')}
+                  source={require('../assets/icons/bell.png')}
                 />
               </View>
             ),
@@ -137,7 +136,7 @@ const Tabs = () => {
                     height: 30,
                     tintColor: focused ? '#C449C2' : 'grey',
                   }}
-                  // source={require('../assets/icons/email.png')}
+                  source={require('../assets/icons/email.png')}
                 />
               </View>
             ),
@@ -159,7 +158,7 @@ const Tabs = () => {
                     height: 30,
                     tintColor: focused ? '#C449C2' : 'grey',
                   }}
-                  // source={require('../assets/icons/enter.png')}
+                  source={require('../assets/icons/enter.png')}
                 />
               </View>
             ),

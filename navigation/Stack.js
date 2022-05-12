@@ -11,6 +11,9 @@ import MessageTime from '../components/sendmessage/MessageTime';
 import MessageType from '../components/sendmessage/MessageType';
 import MessagePlace from '../components/sendmessage/MessagePlace';
 import Messagedetail from '../components/Messagedetail';
+import Alarm from '../screens/Alarm';
+import Setting from '../screens/Setting';
+
 const HomeStack = createStackNavigator();
 const AccountStack = createStackNavigator();
 const AlarmStack = createStackNavigator();
@@ -33,28 +36,6 @@ function HomeStackScreen() {
     )
 }
 
-
-
-
-function AccountStackScreen() {
-    return (
-        <AccountStack.Navigator
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#867AE9',
-                },
-                headerTintColor: 'white',
-                headerTitleAlign: 'center',
-            }}>
-            <AccountStack.Screen name="login" component={Login} />
-      <AccountStack.Screen name="signin" component={Signin} />
-      <AccountStack.Screen name="phone" component={PhoneForm} />
-        </AccountStack.Navigator>
-    );
-}
-
-
-
 function AlarmStackScreen() {
     return (
         <AlarmStack.Navigator
@@ -66,27 +47,14 @@ function AlarmStackScreen() {
                 headerTitleAlign: 'center',
 
             }}>
-            <AlarmStack.Screen name="Alarm" component={ReceivedBox} />
+            <AlarmStack.Screen name="Alarm" component={Alarm}/>
         </AlarmStack.Navigator>
     )
 }
 
 
 
-function MessageStackScreen() {
-    return (
-        <MessageStack.Navigator
-            screenOptions={{
-                headerStyle: {
-                    backgroundColor: '#867AE9',
-                },
-                headerTintColor: 'white',
-                headerTitleAlign: 'center',
-            }}>
-            
-        </MessageStack.Navigator>
-    )
-}
+
 
 
 
@@ -109,6 +77,34 @@ function SendStackScreen() {
             <SendStack.Screen name="Total" component={Messagedetail } />
         </SendStack.Navigator>
     )
+}
+function MessageStackScreen() {
+    return (
+        <MessageStack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#867AE9',
+                },
+                headerTintColor: 'white',
+                headerTitleAlign: 'center',
+            }}>
+            <MessageStack.Screen name="Received" component={ReceivedBox} />
+        </MessageStack.Navigator>
+    )
+}
+function AccountStackScreen() {
+    return (
+        <AccountStack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: '#867AE9',
+                },
+                headerTintColor: 'white',
+                headerTitleAlign: 'center',
+            }}>
+            <AccountStack.Screen name="setting" component={Setting}/>
+        </AccountStack.Navigator>
+    );
 }
 
 export {
